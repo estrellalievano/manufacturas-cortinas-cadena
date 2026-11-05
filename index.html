@@ -3,25 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Manufacturas y Cortinas Cadena. Fabricación de cortinas, zaguanes y soluciones a la medida.">
-    <title>Manufacturas y Cortinas Cadena</title>
-<link rel="stylesheet" href="css/styles.css"></head>
+
+    <meta name="description" content="Manufacturas y Cortinas Cadena. Fabricación de cortinas, zaguanes y soluciones personalizadas.">
+
+    <meta name="theme-color" content="#142B4C">
+
+    <title>Manufacturas y Cortinas Cadena | Fabricación propia</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
 <body>
 
-    <header>
-        <h1>Manufacturas y Cortinas Cadena</h1>
-        <p>Soluciones en cortinas y zaguanes</p>
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#inicio" class="brand">
+            <span class="brand-name">CADENA<span>.</span></span>
+            <span class="brand-subtitle">
+                MANUFACTURAS Y CORTINAS
+            </span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle"
+            aria-label="Abrir menú" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="navigation" id="navigation">
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#productos">Productos</a>
+            <a href="#fabricacion">Fabricación</a>
+            <a href="#contacto" class="nav-contact">
+                Contacto
+            </a>
+        </nav>
     </header>
 
     <main>
-        <h2>Fabricamos soluciones. Transformamos espacios.</h2>
-        <p>Calidad, fabricación propia y soluciones a la medida.</p>
-        <a href="#contacto">Solicita tu cotización</a>
+
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <span class="eyebrow">
+                    FABRICACIÓN · CALIDAD · CONFIANZA
+                </span>
+
+                <h1>
+                    Soluciones que
+                    <span>transforman</span>
+                    espacios.
+                </h1>
+
+                <p>
+                    Especialistas en fabricación de cortinas,
+                    zaguanes y soluciones personalizadas
+                    para cada proyecto.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#contacto" class="btn-primary">
+                        Solicitar cotización →
+                    </a>
+
+                    <a href="#productos" class="btn-secondary">
+                        Conocer productos
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    FABRICANTES DE SOLUCIONES A LA MEDIDA
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=85"
+                    alt="Arquitectura moderna de edificio comercial">
+                <div class="image-label">
+                    <span class="red-line"></span>
+                    Diseño y funcionalidad
+                </div>
+            </div>
+        </section>
+
+        <!-- INTRODUCCIÓN -->
+        <section class="intro" id="nosotros">
+            <div class="section-tag">CONÓCENOS</div>
+
+            <h2>
+                Fabricamos soluciones.
+                <span>Construimos confianza.</span>
+            </h2>
+
+            <p>
+                En Manufacturas y Cortinas Cadena ofrecemos
+                soluciones en cortinas y zaguanes mediante
+                fabricación propia, buscando responder a las
+                necesidades de cada espacio y proyecto.
+            </p>
+        </section>
+
+        <!-- PRODUCTOS -->
+        <section class="products section-padding" id="productos">
+
+            <div class="section-heading">
+                <div>
+                    <div class="section-tag">NUESTRO CATÁLOGO</div>
+                    <h2>Soluciones para cada espacio.</h2>
+                </div>
+
+                <p>
+                    Conoce nuestras líneas de productos
+                    y descubre las opciones para tu proyecto.
+                </p>
+            </div>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85"
+                        alt="Interior residencial moderno">
+                    <div class="product-info">
+                        <span>01 / INTERIORES</span>
+                        <h3>Cortinas</h3>
+                        <p>
+                            Soluciones para complementar
+                            y transformar espacios.
+                        </p>
+                        <a href="#contacto">Solicitar información →</a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85"
+                        alt="Diseño arquitectónico contemporáneo">
+                    <div class="product-info">
+                        <span>02 / DISEÑO</span>
+                        <h3>Persianas</h3>
+                        <p>
+                            Alternativas funcionales
+                            para diferentes ambientes.
+                        </p>
+                        <a href="#contacto">Solicitar información →</a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=900&q=85"
+                        alt="Arquitectura moderna de edificio">
+                    <div class="product-info">
+                        <span>03 / SEGURIDAD</span>
+                        <h3>Zaguanes</h3>
+                        <p>
+                            Soluciones para accesos
+                            residenciales y comerciales.
+                        </p>
+                        <a href="#contacto">Solicitar información →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- FABRICACIÓN -->
+        <section class="manufacturing" id="fabricacion">
+
+            <div class="manufacturing-image">
+                <img
+                    src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1200&q=85"
+                    alt="Entorno de trabajo industrial">
+            </div>
+
+            <div class="manufacturing-content">
+                <div class="section-tag light-tag">
+                    NUESTRO DIFERENCIADOR
+                </div>
+
+                <h2>
+                    Somos fabricantes.
+                    <span>La calidad comienza desde el origen.</span>
+                </h2>
+
+                <p>
+                    Al fabricar nuestros propios productos,
+                    podemos trabajar en soluciones adaptadas
+                    a los requerimientos de cada cliente.
+                </p>
+
+                <a href="#contacto" class="btn-primary">
+                    Hablemos de tu proyecto →
+                </a>
+            </div>
+
+        </section>
+
+        <!-- LLAMADA A LA ACCIÓN -->
+        <section class="cta" id="contacto">
+            <div class="section-tag">ESTAMOS PARA AYUDARTE</div>
+
+            <h2>
+                ¿Tienes un proyecto en mente?
+            </h2>
+
+            <p>
+                Cuéntanos qué necesitas y conoce las
+                soluciones que podemos ofrecerte.
+            </p>
+
+            <a href="mailto:" class="btn-primary" id="contact-link">
+                Solicitar información →
+            </a>
+
+            <small>
+                Próximamente integraremos aquí los datos
+                oficiales de contacto de la empresa.
+            </small>
+        </section>
+
     </main>
 
-    <footer id="contacto">
-        <p>Manufacturas y Cortinas Cadena</p>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div>
+            <div class="footer-brand">CADENA<span>.</span></div>
+            <p>Manufacturas y Cortinas Cadena</p>
+            <p>Soluciones en cortinas y zaguanes.</p>
+        </div>
+
+        <div class="footer-bottom">
+            © <span id="current-year"></span>
+            Manufacturas y Cortinas Cadena.
+            Todos los derechos reservados.
+        </div>
     </footer>
 
-<script src="js/script.js"></script></body>
+    <script src="js/script.js"></script>
+
+</body>
 </html>
