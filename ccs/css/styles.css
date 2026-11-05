@@ -1,0 +1,119 @@
+/* =================================
+   MANUFACTURAS Y CORTINAS CADENA
+   Identidad visual corporativa
+================================= */
+
+:root {
+    --navy: #142B4C;
+    --red: #C62E38;
+    --white: #FFFFFF;
+    --light: #F4F5F7;
+    --text: #273244;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.6;
+}
+
+/* NAVEGACIÓN */
+
+header {
+    background: var(--navy);
+    color: var(--white);
+    padding: 25px 8%;
+}
+
+header h1 {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+header p {
+    color: #E5EAF1;
+    font-size: 14px;
+}
+
+/* PORTADA */
+
+main {
+    min-height: 520px;
+    padding: 110px 8%;
+    background: var(--navy);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main h2 {
+    max-width: 700px;
+    font-size: clamp(36px, 6vw, 64px);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+main p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #E5EAF1;
+}
+
+main a {
+    display: inline-block;
+    background: var(--red);
+    color: var(--white);
+    padding: 14px 28px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+main a:hover {
+    background: #A91F2A;
+    transform: translateY(-2px);
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    background: var(--light);
+    text-align: center;
+    padding: 30px;
+    color: var(--navy);
+}
+
+/* ADAPTACIÓN MÓVIL */
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px 6%;
+    }
+
+    main {
+        padding: 80px 6%;
+        min-height: 450px;
+    }
+
+    main h2 {
+        font-size: 38px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+}
