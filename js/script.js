@@ -1,23 +1,28 @@
-/* =================================
-   MANUFACTURAS Y CORTINAS CADENA
-   Funciones de interacción
-================================= */
+// MENÚ PARA DISPOSITIVOS MÓVILES
 
-// Mensaje de bienvenida en consola
-console.log("Bienvenido a Manufacturas y Cortinas Cadena");
+const menuToggle = document.getElementById("menu-toggle");
+const navigation = document.getElementById("navigation");
 
-// Botones de cotización
-const quoteButtons = document.querySelectorAll(
-    'a[href="#contacto"]'
-);
+menuToggle.addEventListener("click", () => {
+    const isOpen = navigation.classList.toggle("active");
 
-quoteButtons.forEach(button => {
-    button.addEventListener("click", () => {
-        console.log("Un cliente está interesado en cotizar.");
+    menuToggle.setAttribute("aria-expanded", isOpen);
+    menuToggle.textContent = isOpen ? "✕" : "☰";
+});
+
+// CERRAR MENÚ AL SELECCIONAR UNA SECCIÓN
+
+document.querySelectorAll(".navigation a").forEach(link => {
+    link.addEventListener("click", () => {
+        navigation.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.textContent = "☰";
     });
 });
 
-// Año automático del sitio
-const currentYear = new Date().getFullYear();
+// AÑO AUTOMÁTICO
 
-console.log("Año actual:", currentYear);
+document.getElementById("current-year").textContent =
+    new Date().getFullYear();
+
+console.log("Manufacturas y Cortinas Cadena: sitio iniciado correctamente.");
